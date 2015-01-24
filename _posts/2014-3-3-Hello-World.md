@@ -3,5 +3,4 @@ layout: post
 title: You're up and running!
 ---
 
-Hello World!!
-
+Primeiro Encontro em Computação Semântica
