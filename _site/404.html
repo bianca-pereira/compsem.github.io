@@ -1,79 +1,506 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>404 - Page not found – Encontro em Computação Semântica – Primeiro Encontro em Computação Semântica</title>
-
     <meta name="author" content="Encontro em Computação Semântica" />
     <meta name="description" content="Primeiro Encontro em Computação Semântica">
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <!--== CSS Files ==-->
+    <link href="/css/bootstrap.css" rel="stylesheet" media="screen" >
+    <link href="/css/style3.css" rel="stylesheet" media="screen" />
+    <link href="/css/font-awesome.css" rel="stylesheet" media="screen" />
+    <link href="/css/animate.min.css" rel="stylesheet" media="screen" />
+    <link href="/css/font-awesome.css" rel="stylesheet" media="screen" />
+    <link href="/css/flexslider.css" rel="stylesheet" media="screen" />
+    <link href="/responsive.css" rel="stylesheet" media="screen" />
+    
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Belgrano" rel="stylesheet" type="text/css">
+    
     <link rel="alternate" type="application/rss+xml" title="Encontro em Computação Semântica - Primeiro Encontro em Computação Semântica" href="/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="/" class="site-avatar"><img src="" /></a>
-          
-          <div class="site-info">
-            <h1 class="site-name"><a href="/">Encontro em Computação Semântica</a></h1>
-            <p class="site-description">Primeiro Encontro em Computação Semântica</p>
-          </div>
-          
-          <nav>
-            <a href="/">Blog</a>
-            <a href="/about">About</a>
-          </nav>
-        </header>
-      </div>
+    <header id="header">
+	<div id="menu" class="header-menu fixed">
+	    <div class="container box">
+		<div class="row">
+		    <nav role="navigation" class="col-sm-12">
+			<div class="navbar-header">
+			    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			    </button>
+
+			    <!--== Logo ==-->
+			    <span class="navbar-brand logo">
+			    <span class="fa fa-map-marker"></span>
+			    </span>
+			</div>
+			<div class="navbar-collapse collapse">
+			    <!--== Navigation Menu ==-->
+			    <ul class="nav navbar-nav">
+				<li class="current"><a href="#header">Inicio</a></li>
+				<li class=""><a href="#evento">O Evento</a></li>
+				<li class=""><a href="#schedule">Programa</a></li>
+				<li class=""><a href="#faq">FAQ</a></li>
+				<li class=""><a href="#partners">Patrocinio</a></li>
+				<li class=""><a href="#register">Registre-se</a></li>
+			    </ul>
+			    
+			</div>
+		    </nav>
+		</div>
+	    </div>
+	</div>
+
+	<!--== Site Description ==-->
+	<div class="header-cta">
+	    <div class="container">
+		<div class="row">
+		    <div class="blk">
+			<h1>Encontro em Computação Semântica</h1>
+			<p>Universidade Federal do Rio de Janeiro<br>
+			Centro de Ciências Matemáticas e da Natureza (CCMN)<br>
+			Av. Athos da Silveira Ramos, 284</p>
+		    </div>
+		</div>
+		<div class="row">
+		    <div class="blk">
+			<input type="submit" value="Register" name="submit" id="goregister">
+		    </div>
+		</div>
+	    </div>
+	</div>
+
+	<div class="header-bg">
+	    <div id="preloader" class="ready">
+		<div class="preloader"></div>
+	    </div>
+	    <div class="main-slider" id="main-slider">
+		
+		<!--== Main Slider ==-->
+		<ul class="slides">
+		    <li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; display: block; z-index: 1; opacity: 0.895077506187845;">
+			<img src="images/bg/bg-slide-06.jpg" alt="Slide Image" draggable="false" style="margin-left: -675.5px;">
+		    </li>
+		    <li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; display: block; z-index: 2; opacity: 0.104922493812155;">
+			<img src="images/bg/bg-slide-05.jpg" alt="Slide Image 2" draggable="false" style="margin-left: -675.5px;">
+		    </li>
+		</ul>
+
+	    </div>
+	</div>
+    </header>
+
+    <div class="content">
+	<div class="container box">
+	    
+	    <!--===============================-->
+	    <!--== Features ===================-->
+	    <!--===============================-->
+	    <section id="features" class="row">
+		<div class="col-md-3 col-xs-6">
+		    <div class="event-info">
+			<div class="icon fa fa-map-marker"></div>
+			<div class="info">
+			    <h3>Rio do Janeiro</h3>
+			    <span>Grand Place, 1000</span>
+			</div>
+		    </div>
+		</div>
+		<div class="col-md-3 col-xs-6">
+		    <div class="event-info">
+			<div class="icon fa fa-calendar"></div>
+			<div class="info">
+			    <h3>XX March</h3>
+			    <span>This year, of course.</span>
+			</div>
+		    </div>
+		</div>
+		<div class="col-md-3 col-xs-6">
+		    <div class="event-info">
+			<div class="icon fa fa-microphone"></div>
+			<div class="info">
+			    <h3>6 Speakers</h3>
+			    <span>Best specialists.</span>
+			</div>
+		    </div>
+		</div>
+		<div class="col-md-3 col-xs-6">
+		    <div class="event-info">
+			<div class="icon fa fa-users"></div>
+			<div class="info">
+			    <h3>200 Seats</h3>
+			    <span>Hurry up, register!</span>
+			</div>
+		    </div>
+		</div>
+	    </section>
+	    <!--==========-->
+
+
+	    <!--===============================-->
+	    <!--== Event Description =============-->
+	    <!--===============================-->
+	    <section id="evento" class="row">
+		<div class="col-sm-12">
+		    <div class="section-header text-left">
+			<h2>O Evento</h2>
+			<h4>Awesome section description goes here.</h4>
+		    </div>
+		</div>
+		<div class="col-sm-12">
+		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit eaque dolorem fugiat ullam ea! Perspiciatis, ipsum ea possimus voluptatem sequi amet harum dolores commodi eveniet earum est expedita error ab.</p>
+		</div>
+	    </section>		
+	    <!--==========-->
+	    
+	    
+	    <!--===============================-->
+	    <!--== Schedule ===================-->
+	    <!--===============================-->
+	    <section id="schedule" class="row">
+		<div class="col-md-7 col-sm-12">
+		    <div class="content-tabs">
+			<ul class="nav nav-tabs">
+			    <li class="active"><a href="#tab1" data-toggle="tab">Day 1</a></li>
+			    <li><a href="#tab2" data-toggle="tab">Day 2</a></li>
+			</ul>
+			
+			<div class="tab-content">
+			    <div class="tab-pane active" id="tab1">
+				<ul class="accordion-group">
+				    <li class="accordion">
+					<a class="accordion-heading">
+					    <time>10:30</time>
+					    <h4 class="accordion-title">Fugit, officia laudantium repellat</h4>
+					    <span class="fa fa-plus-circle pull-right"></span>
+					</a>
+					<div class="accordion-body" style="display: none;">
+					    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
+					</div>
+				    </li>
+				    <li class="accordion">
+					<a class="accordion-heading">
+					    <time>12:30</time>
+					    <h4 class="accordion-title">Fugit, officia laudantium repellat</h4>
+					    <span class="fa fa-plus-circle pull-right"></span>
+					</a>
+					<div class="accordion-body" style="display: none;">
+					    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
+					</div>
+				    </li>
+				    <li class="accordion">
+					<a class="accordion-heading">
+					    <time>14:00</time>
+					    <h4 class="accordion-title">Fugit, officia laudantium repellat</h4>
+					    <span class="fa fa-plus-circle pull-right"></span>
+					</a>
+					<div class="accordion-body" style="display: none;">
+					    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
+					</div>
+				    </li>
+				</ul>
+			    </div>
+			    <div class="tab-pane" id="tab2">
+				<ul class="accordion-group">
+				    <li class="accordion">
+					<a class="accordion-heading">
+					    <time>11:30</time>
+					    <h4 class="accordion-title">Fugit, officia laudantium repellat</h4>
+					    <span class="fa fa-plus-circle pull-right"></span>
+					</a>
+					<div class="accordion-body" style="display: none;">
+					    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
+					</div>
+				    </li>
+				    <li class="accordion">
+					<a class="accordion-heading">
+					    <time>11:30</time>
+					    <h4 class="accordion-title">Fugit, officia laudantium repellat</h4>
+					    <span class="fa fa-plus-circle pull-right"></span>
+					</a>
+					<div class="accordion-body" style="display: none;">
+					    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
+					</div>
+				    </li>
+				    <li class="accordion">
+					<a class="accordion-heading">
+					    <time>11:30</time>
+					    <h4 class="accordion-title">Fugit, officia laudantium repellat</h4>
+					    <span class="fa fa-plus-circle pull-right"></span>
+					</a>
+					<div class="accordion-body" style="display: none;">
+					    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
+					</div>
+				    </li>
+				</ul>
+			    </div>
+			</div>
+		    </div>
+		</div>
+		<div class="col-md-5 col-sm-12">
+		    <h2>Programa</h2>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, error, et. Cupiditate, necessitatibus, ab, nemo commodi quod unde facere doloribus voluptatibus recusandae quibusdam molestiae excepturi corrupti quae! Dolor, deserunt, consequuntur.</p>
+		    <ul>
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+			<li>Vero, deleniti, provident beatae illo accusantium</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+		    </ul>
+		</div>
+	    </section>
+	    <!--==========-->
+        
+
+	    <!--===============================-->
+	    <!--== Speakers ===================-->
+	    <!--===============================-->
+	    <section id="speakers" class="row separated">
+		<div class="col-sm-12">
+		    <div class="section-header text-center">
+			<h2>Speakers</h2>
+			<h4>Awesome section description goes here.</h4>
+		    </div>
+		</div>
+		<div class="col-md-4 col-sm-6">
+		    <div class="speaker">
+			<div class="speaker-info">
+			    <div class="speaker-photo">
+				<img src="images/speakers/speaker-01.jpg" alt="Speaker 1">
+			    </div>								
+			    <div class="speaker-contacts">
+				<a href="#" class="contact pull-left fa fa-facebook"></a>
+				<a href="#" class="contact pull-right fa fa-twitter"></a>
+			    </div>
+			</div>
+			<h3>Jane Doe</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		    </div>
+		</div>
+		<div class="col-md-4 col-sm-6">
+		    <div class="speaker">
+			<div class="speaker-info">
+			    <div class="speaker-photo">
+				<img src="images/speakers/speaker-02.jpg" alt="Speaker 2">
+			    </div>
+			    <div class="speaker-contacts">
+				<a href="#" class="contact pull-left fa fa-facebook"></a>
+				<a href="#" class="contact pull-right fa fa-twitter"></a>
+			    </div>
+			</div>
+			<h3>Michele Doe</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		    </div>
+		</div>
+		<div class="col-md-4 col-sm-6">
+		    <div class="speaker">
+			<div class="speaker-info">
+			    <div class="speaker-photo">
+				<img src="images/speakers/speaker-03.jpg" alt="Speaker 3">
+			    </div>
+			    <div class="speaker-contacts">
+				<a href="#" class="contact pull-left fa fa-facebook"></a>
+				<a href="#" class="contact pull-right fa fa-twitter"></a>
+			    </div>
+			</div>
+			<h3>John Doe</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		    </div>
+		</div>
+		<div class="col-md-4 col-sm-6">
+		    <div class="speaker">
+			<div class="speaker-info">
+			    <div class="speaker-photo">
+				<img src="images/speakers/speaker-04.jpg" alt="Speaker 4">
+			    </div>
+			    <div class="speaker-contacts">
+				<a href="#" class="contact pull-left fa fa-facebook"></a>
+				<a href="#" class="contact pull-right fa fa-twitter"></a>
+			    </div>
+			</div>
+			<h3>Nick Doe</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		    </div>
+		</div>
+		<div class="col-md-4 col-sm-6">
+		    <div class="speaker">
+			<div class="speaker-info">
+			    <div class="speaker-photo">
+				<img src="images/speakers/speaker-05.jpg" alt="Speaker 5">
+			    </div>
+			    <div class="speaker-contacts">
+				<a href="#" class="contact pull-left fa fa-facebook"></a>
+				<a href="#" class="contact pull-right fa fa-twitter"></a>
+			    </div>
+			</div>
+			<h3>Valerie Doe</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,  sed do eiusmod tempor</p>
+		    </div>
+		</div>
+		<div class="col-md-4 col-sm-6">
+		    <div class="speaker">
+			<div class="speaker-info">
+			    <div class="speaker-photo">
+				<img src="images/speakers/speaker-06.jpg" alt="Speaker 6">
+			    </div>
+			    <div class="speaker-contacts">
+				<a href="#" class="contact pull-left fa fa-facebook"></a>
+				<a href="#" class="contact pull-right fa fa-twitter"></a>
+			    </div>
+			</div>
+			<h3>Mike Doe</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		    </div>
+		</div>
+	    </section>
+	    <!--==========-->
+
+
+	    <!--===============================-->
+	    <!--== FAQ ========================-->
+	    <!--===============================-->
+	    <section id="faq" class="row">
+		<div class="col-sm-12">
+		    <div class="section-header text-right">
+			<h2>F.A.Q</h2>
+			<h4>Awesome section description goes here.</h4>
+		    </div>
+		</div>
+		<div class="col-sm-6">
+		    <ul class="accordion-group">
+			<li class="accordion">
+			    <a class="accordion-heading">
+				<h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
+				<span class="fa fa-plus-circle pull-right"></span>
+			    </a>
+			    <div class="accordion-body" style="display: none;">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
+			    </div>
+			</li>
+			<li class="accordion">
+			    <a class="accordion-heading">
+				<h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
+				<span class="fa fa-plus-circle pull-right"></span>
+			    </a>
+			    <div class="accordion-body" style="display: none;">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
+			    </div>
+			</li>
+		    </ul>
+		</div>
+		<div class="col-sm-6">
+		    <ul class="accordion-group">
+			<li class="accordion">
+			    <a class="accordion-heading">
+				<h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
+				<span class="fa fa-plus-circle pull-right"></span>
+			    </a>
+			    <div class="accordion-body" style="display: none;">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
+			    </div>
+			</li>
+			<li class="accordion">
+			    <a class="accordion-heading">
+				<h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
+				<span class="fa fa-plus-circle pull-right"></span>
+			    </a>
+			    <div class="accordion-body" style="display: none;">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
+			    </div>
+			</li>
+		    </ul>
+		</div>
+	    </section>
+	    <!--==========-->
+        
+
+	    <!--===============================-->
+	    <!--== Partners ===================-->
+	    <!--===============================-->
+	    <section id="partners" class="row">
+		<div class="col-sm-12">
+		    <div class="section-header text-center">
+			<h2>Patrocinio</h2>
+			<h4>Awesome section description goes here.</h4>
+		    </div>
+		</div>
+		<div class="col-sm-12">
+		    <div class="col-sm-4"><img src="images/partners/logo-01.png" alt="Logo 1"></div>
+		    <div class="col-sm-4"><img src="images/partners/logo-02.png" alt="Logo 2"></div>
+		    <div class="col-sm-4"><img src="images/partners/logo-03.png" alt="Logo 3"></div>
+		    <div class="col-sm-4"><img src="images/partners/logo-04.png" alt="Logo 4"></div>
+		    <div class="col-sm-4"><img src="images/partners/logo-05.png" alt="Logo 5"></div>
+		    <div class="col-sm-4"><img src="images/partners/logo-06.png" alt="Logo 6"></div>
+		</div>
+	    </section>
+	    <!--==========-->
+
+
+	    <!--===============================-->
+	    <!--== Register ===================-->
+	    <!--===============================-->
+	    <section id="register" class="row">
+		<div class="col-sm-12">
+		    <div class="section-header text-center">
+			<h2>Registre-se</h2>
+			<h4>Awesome section description goes here.</h4>
+		    </div>
+		</div>
+		<div class="col-sm-12">
+		    <input type="submit" value="Clique Aqui" name="submit" id="registerBtn">
+		</div>
+	    </section>
+	    <!--==========-->
+
+	    <div id="gotop" class="gotop fa fa-arrow-up"></div>
+	</div>
     </div>
 
-    <div id="main" role="main" class="container">
-      <article class="page">
-  
-  <h1>404 - Page not found</h1>
+    <footer id="footer">
+	<div class="footer">
+	    <div class="container box">
+		<section id="info" class="row">
+		    <div class="col-sm-8">
 
-  <div class="entry">
-    <p>Sorry, we can&#8217;t find that page that you&#8217;re looking for. You can try take for a look by going <a href="/">back to the homepage</a>.</p>
+			<!--== Social Icons ==-->
+			<ul class="social-icons">
+			    <li><a href="https://twitter.com/search?q=%23compsem&src=typd" target="_blank" class="fa fa-twitter"></a></li>
+<!--
+			    <li><a href="#" class="fa fa-google-plus"></a></li>
+			    <li><a href="#" class="fa fa-youtube"></a></li>
+			    <li><a href="#" class="fa fa-instagram"></a></li>
+			    <li><a href="#" class="fa fa-pinterest"></a></li>
+			    <li><a href="#" class="fa fa-linkedin"></a></li>
+-->
+			</ul>
+			
+		    </div>
+		    <div class="col-sm-4 text-right">
+			<div class="copyrights">
+			    All Rights Reserved. © 2014
+			</div>
+		    </div>
+		</section>
 
-<p><a href="/"><img src="/images/404.jpg" alt="Constructocat by https://github.com/jasoncostello" style="width: 400px;" /></a></p>
-
-  </div>
-</article>
-
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          
-
-
-
-
-
-
-
-
-
-
-
-        </footer>
-      </div>
-    </div>
+	    </div>
+	</div>
+    </footer>
 
     
 
+    
+    <!--== Javascript Files ==-->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/jquery.accordion.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
