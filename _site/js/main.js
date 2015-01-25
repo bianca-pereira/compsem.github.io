@@ -18,7 +18,7 @@
         // Sticky Menu
         MenuSticky: function () {
             var menu = document.querySelector('#menu'),
-            origOffsetY = menu.offsetTop + 100;
+                origOffsetY = menu.offsetTop + 100;
             function scroll() {
                 if ($(window).scrollTop() >= origOffsetY) {
                     $('#menu').addClass('sticky');
@@ -62,9 +62,9 @@
         Navigation: function () {
             $('#menu').onePageNav({
                 currentClass: 'current',
-                changeHash: true,
+                changeHash: false,
                 scrollSpeed: 750,
-                scrollThreshold: 0.2,
+                scrollThreshold: 0.5,
                 filter: '',
                 easing: 'swing',
                 scrollOffset: 60,
@@ -97,6 +97,9 @@
             $('#registerBtn').click(function () {
                 window.open('http://www.mydomain.com?ReportID=1', '_blank');
             });
+            
+            //$(window).trigger('scroll.onePageNav');
+            
         }
     };
 

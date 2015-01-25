@@ -2,24 +2,20 @@
 Color Scheme =======*/
 
 input[type='submit'], .nav li.current a, .speaker-contacts > .contact:hover, 
-.social-icons li a:hover, .form-notification, .table-price, .gotop:hover, 
-.preloader div, .owl-btn.prev:hover, .owl-btn.next:hover,
+.social-icons li a:hover, .gotop:hover, .preloader div, 
 .flex-control-paging li a.flex-active, .flex-control-paging li a.flex-active:hover, 
-.owl-page.active span, .owl-page.active span:hover,
-.preloader, .preloader:before, .preloader:after, div.fancy-select div.trigger.open,
-div.fancy-select ul.options li.selected, div.fancy-select ul.options li.selected.hover  {
+.preloader, .preloader:before, .preloader:after  {
 	background-color: #FF6347;
 }
 
 a, .accordion-heading span, .speaker-contacts > .contact, 
-.table-features li.fa-check-circle, .owl-btn.prev,
-.owl-btn.next, div.fancy-select ul.options li.hover {
+.table-features li.fa-check-circle {
 	color: #FF6347;
 }
 
 .speaker:hover .speaker-photo, .speaker-contacts > .contact, 
 .social-icons li a:hover, .gotop:hover, .speaker-contacts > .contact:hover {
-	border-color: #FF6347;/*#2ecc71;*/
+	border-color: #FF6347;
 }
 
 
@@ -190,9 +186,11 @@ input[type='submit']:active {
 .header-menu.sticky {
 	position: fixed;
 	margin: 0;
+/*
 	-moz-animation: bounceInDown 0.5s;
 	-webkit-animation: bounceInDown 0.5s;
 	animation: bounceInDown 0.5s;
+*/
 }
 
 .header-menu.fixed {

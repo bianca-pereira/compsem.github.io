@@ -194,6 +194,11 @@
 					if(this.config.scrollChange) {
 						this.config.scrollChange($parent);
 					}
+					
+					//End callback - added
+					if(this.config.end) {
+						this.config.end();
+					}
 				}
 			}
 		},
