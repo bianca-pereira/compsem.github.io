@@ -95,7 +95,7 @@
             });
             // Register
             $('#registerBtn').click(function () {
-                window.open('http://www.mydomain.com?ReportID=1', '_blank');
+                window.open('https://eventioz.com.br/e/primeiro-encontro-em-computacao-semantica', '_blank');
             });
             
             //$(window).trigger('scroll.onePageNav');
